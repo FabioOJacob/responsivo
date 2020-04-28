@@ -2,37 +2,43 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: arial;
 }
 body {
   background: #fff;
 }
 
 @font-face {
-  font-family: "Nasa.ttf";
-  src: url("Nasa.ttf") format("truetype");
+  font-family: "Nasa";
+  src: url("../css/Nasa.ttf") format("truetype");
 }
 
 /* NAV */
 nav {
-  background: #111;
+  background: #403d58;
   color: #fff;
-  padding: 25px;
+  padding: 15px;
+  border-bottom: 1px solid silver;
+  position: fixed;
+  width: 100%;
 }
 nav > a {
   color: #fff;
   text-decoration: none;
-  font-family: arial;
+  font-family: Nasa;
+  font-size: 20px;
 }
 nav ul {
   list-style: none;
   float: right;
+  margin-right: 35px;
 }
 nav ul li a {
   display: inline;
   margin-right: 5px;
   color: #fff;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
 }
 nav ul li a:hover {
   color: #ccc;
@@ -50,14 +56,17 @@ nav ul li a:hover {
   text-align: center;
   text-shadow: #000 2px 2px 2px;
   font-family: Nasa;
+  font-size: 40px;
+  border-bottom: 1px solid silver;
+  padding-bottom: 8px;
 }
 .section1 h3 {
   color: #fff;
   text-align: center;
-  text-align: center;
   text-shadow: #000 2px 2px 2px;
   font-size: 13px;
   font-family: arial;
+  padding-top: 8px;
 }
 
 /* SECTION 2 */
@@ -68,66 +77,84 @@ nav ul li a:hover {
   text-align: center;
 }
 .section2 h1 {
-  font-size: 50px;
+  font-size: 40px;
   text-shadow: #000 2px 2px 2px;
+  font-family: arial;
+  border-bottom: 1px solid silver;
+  padding-bottom: 15px;
 }
-.section2 a {
-  margin-top: 15px;
-  text-align: left;
+.section2 p {
+  padding-top: 15px;
+  text-align: center;
 }
 
 /* SECTION 3 */
 .section3 {
-  padding: 200px;
+  padding: 20px;
   background: #fff;
+  border-bottom: 1px solid silver;
+  text-align: center;
+  background: url(../img/bg2.jpg);
+  background-attachment: fixed;
+}
+.section3 h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  padding: 10px;
+  margin: 30px auto;
+  max-width: 500px;
+  font-family: arial;
+  border-bottom: 1px solid silver;
+}
+.section3 form {
+  margin: auto;
   text-align: center;
 }
-.section3 hr {
-  margin: 0 200px 0 200px;
+.section3 p {
+  padding: 10px;
 }
-.section3 input {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  padding: 10px 55px 10px 10px;
+.section3 form input {
+  width: 300px;
+  border: 2px solid #403d58;
+  border-radius: 10px;
+  padding: 10px;
 }
-.section3 textarea {
-  padding-right: 10px;
-}
-.section3 button {
-  color: #fff;
-  background: green;
-  border: none;
-  padding: 10px 100px 10px 100px;
+.section3 form textarea {
+  width: 302px;
+  padding: 10px;
+  border: 2px solid #403d58;
+  color: #000;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 
 /* FOOTER */
 footer {
-  padding: 30px;
-  background: #111;
+  padding: 20px;
+  background: #403d58;
   color: #fff;
   text-align: center;
   font-size: 12px;
 }
 
+/* PARA TELAS MAIORES QUE 992PX */
+@media (min-width: 992px) {
+  div.section1 h1 {font-size: 150px; }
+  div.section1 h3 {font-size: 24px; }
+  div.section1 { padding: 300px;}
+  nav > a {font-size: 40px;}
+  nav ul {padding: 10px; font-size: 27px;}
 
-@media (min-width: 768px) {
-  .section1 {
-    padding: 400px;
-  }
-  .section1 h1 {
-    color: #fff;
-    font-size: 80px;
-    text-align: center;
-    text-shadow: #000 2px 2px 2px;
-  }
-  .section1 h3 {
-    color: #fff;
-    text-align: center;
-    text-shadow: #000 2px 2px 2px;
-    font-size: 30px;
-  }
   .section2 {
     padding: 200px;
+  }
+  .section3 {
+    padding: 60px;
+  }
+  .section3 form textarea,
+  .section3 form input {
+    width: 600px;
   }
 }
