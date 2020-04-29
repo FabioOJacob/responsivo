@@ -16,7 +16,7 @@
         <li>
           <a href="index.html">Home</a>
           <a href="#sobre">Sobre</a>
-          <a style="cursor:pointer" onclick="alert('Em desenvolvimento')">Pesquisa</a>
+          <a class="search" onclick="alert('Em desenvolvimento')">Pesquisa</a>
           <a href="#contato">Contato</a>
         </li>
       </ul>
@@ -50,12 +50,16 @@
           <textarea rows="10" cols="30"></textarea>
         </p>
         <p>
-          <input type="submit" value="Enviar" style="max-width:100px;
-          background:#403D58; color:#fff; font-weight:bold;">
+          <input type="submit" value="Enviar" class="button">
         </p>
       </form>
     </div>
 
-    <footer>&reg; Todos os direitos reservados</footer>
+    <footer>
+      <ul>
+        <li>&reg; Todos os direitos reservados</li>
+        <li id="fabio">Design By Fabio Jacob</li>
+      </ul>
+      </footer>
   </body>
 </html>

@@ -43,13 +43,15 @@ nav ul li a {
 nav ul li a:hover {
   color: #ccc;
 }
+.search {cursor:pointer;}
 
 
 /* SECTION 1 */
 .section1 {
-  background: url("../img/bg.jpg");
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
   background-attachment: fixed;
-  padding: 100px;
+  padding: 200px 50px 200px 50px;
 }
 .section1 h1 {
   color: #fff;
@@ -71,7 +73,7 @@ nav ul li a:hover {
 
 /* SECTION 2 */
 .section2 {
-  padding: 20px;
+  padding: 70px 30px 70px 30px;
   color: #fff;
   background: #403d58;
   text-align: center;
@@ -90,11 +92,12 @@ nav ul li a:hover {
 
 /* SECTION 3 */
 .section3 {
-  padding: 20px;
+  padding: 50px 20px 50px 10px;
   background: #fff;
   border-bottom: 1px solid silver;
   text-align: center;
-  background: url(../img/bg2.jpg);
+  background: url(../img/bg2.jpg) no-repeat;
+  background-size: cover;
   background-attachment: fixed;
 }
 .section3 h1 {
@@ -128,6 +131,16 @@ nav ul li a:hover {
   font-size: 20px;
   border-radius: 10px;
 }
+.button {
+  max-width:100px;
+  background:#403D58;
+  color:#fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button:hover {
+  background: #72708a;
+}
 
 
 /* FOOTER */
@@ -138,23 +151,28 @@ footer {
   text-align: center;
   font-size: 12px;
 }
+footer ul {
+  list-style: none;
+  font-family: Calibri;
+  user-select: none;
+  font-size: 15px;
+}
+#fabio {
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 12px;
+}
 
 /* PARA TELAS MAIORES QUE 992PX */
 @media (min-width: 992px) {
-  div.section1 h1 {font-size: 150px; }
-  div.section1 h3 {font-size: 24px; }
-  div.section1 { padding: 300px;}
   nav > a {font-size: 40px;}
-  nav ul {padding: 10px; font-size: 27px;}
+  nav ul li a {font-size: 22px;}
+  div.section1 h1 {font-size: 10vw;}
+  div.section1 h3 {font-size: 2vw; }
+  div.section1 {padding: 300px;}
 
-  .section2 {
-    padding: 200px;
-  }
-  .section3 {
-    padding: 60px;
-  }
-  .section3 form textarea,
-  .section3 form input {
-    width: 600px;
-  }
+  div.section2 {padding: 200px;}
+  div.section3 {padding: 60px;}
+  div.section3 form textarea,
+  div.section3 form input {width: 600px;}
 }
